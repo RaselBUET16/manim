@@ -1,4 +1,5 @@
-from manimlib import *
+# OpenRefactory Warning: Importing every public name using star import should be avoided.
+    from manimlib import *
 import numpy as np
 
 # To watch one of these scenes, run the following:
