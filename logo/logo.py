@@ -1,4 +1,5 @@
-from manimlib.imports import *
+# OpenRefactory Warning: Importing every public name using star import should be avoided.
+    from manimlib.imports import *
 
 NEW_BLUE = "#68a8e1"
 
