@@ -324,6 +324,9 @@ class Circle(Arc):
         #     (self.get_width() + 2 * buff) / self.get_width()
         # contains redundant method call 'self.get_width()'
         self.stretch((self.get_width() + 2 * buff) / self.get_width(), 0)
+        # OpenRefactory Warning: The following expression
+        #     (self.get_height() + 2 * buff) / self.get_height()
+        # contains redundant method call 'self.get_height()'
         self.stretch((self.get_height() + 2 * buff) / self.get_height(), 1)
         return self
 
