@@ -29,6 +29,8 @@ def bezier(
     points: Sequence[float | FloatArray] | VectNArray
 ) -> Callable[[float], float | FloatArray]:
     if len(points) == 0:
+        # OpenRefactory Warning: Raising 'Exception' and 'BaseException' directly will have a negative impact on any code trying to catch these exceptions.
+        # Raise a more specific built-in exception or, create a custom one.
         raise Exception("bezier cannot be calld on an empty list")
 
     n = len(points) - 1
