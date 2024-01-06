@@ -110,6 +110,9 @@ class Sphere(Surface):
         )
 
     def uv_func(self, u: float, v: float) -> np.ndarray:
+        # OpenRefactory Warning: The following expression
+        #     self.radius * np.array([ math.cos(u) * math.sin(v), math.sin(u) * math.sin(v), -math.cos(v) ])
+        # contains redundant method call 'math.sin(v)'
         return self.radius * np.array([
             math.cos(u) * math.sin(v),
             math.sin(u) * math.sin(v),
